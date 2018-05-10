@@ -1,0 +1,67 @@
+<div ng-controller="EmployeesAddController">
+
+    <div class="col-lg-12 no-padding">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Add new employee data</h5>
+
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <form name="add_employee" ng-submit="addEmployee()">
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label>Enter Employee Name </label>
+                                <input ng-model="employee.name" type="text"  class="form-control" placeholder="add employee name"  pattern=".{4,50}" title="Name must be 4 characters" required="" oninvalid="this.setCustomValidity('Person name is empty please fill this...')" oninput="setCustomValidity('')">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label>Enter Employee Phone Number</label>
+                                <input ng-model="employee.phone" type="text" class="form-control" placeholder="add employee phone" pattern="[0-9]{10}" title="This will accept only numeric values " required="" oninvalid="this.setCustomValidity('Phone number is empty please fill this...')" oninput="setCustomValidity('')">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label>Enter Employee City</label>
+                                <input ng-model="employee.address.city" type="text" class="form-control" placeholder="add employee city">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label>Enter Employee Address-1 </label>
+                                <input ng-model="employee.address.address_line1" type="text" class="form-control" placeholder="add employee address -1" >
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label>Enter Employee Address-2</label>
+                                <input  ng-model="employee.address.address_line2" type="text" class="form-control" placeholder="add employee address -2">
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="form-group">
+                                <label>Enter Employee Postal Code</label>
+                                <input  ng-model="employee.address.postal_code" type="text" class="form-control" placeholder="add employee postal code">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4">
+
+                                <input type="submit" value="Add Employee" class="btn btn-outline btn-primary" >
+
+                        </div>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

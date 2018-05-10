@@ -7,6 +7,14 @@ app.config(function ($routeProvider) {
         .when("/employee/", {
             templateUrl: "./html/main.html",
             controller: "EmployeesController"
+        })
+        .when("/employee/add/", {
+            templateUrl: "./html/add.html",
+            controller: "EmployeesAddController"
+        })
+        .when("/employee/:id/edit/", {
+            templateUrl: "./html/edit.html",
+            controller: "EmployeesEditController"
         });
 });
 
@@ -26,10 +34,6 @@ app.filter('check_phone_number', function () {
         return isNaN(number) ? 'NA' : number;
     }
 });
-
-
-
-
 /*made custom filter for searching specific name*/
 app.filter('search_filter', function () {
     return function (dataArray, search_key) {
@@ -50,3 +54,5 @@ app.filter('search_filter', function () {
         return tmp;
     }
 });
+
+
