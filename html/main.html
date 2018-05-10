@@ -1,0 +1,40 @@
+<div class="col-lg-12 no-padding" ng-controller="EmployeesController">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <div class="col-lg-4 no-padding has-success">
+                <input class="form-control " type="text" placeholder="Search with employee name OR city name " ng-model="search_employee">
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="ibox-content">
+            <span ng-bind="no_data"></span>
+            <table class="table table-striped">
+                <thead>
+                <tr class="text-uppercase">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>address 1</th>
+                    <th>address 2</th>
+                    <th>Postal Code</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="set_employee_records in get_employee_data ">
+                    <td>{{ set_employee_records.id }}</td>
+                    <td>{{ set_employee_records.name | uppercase }}</td>
+                    <td>{{ set_employee_records.phone| check_phone_number}}</td>
+                    <td>{{ set_employee_records.address.city }}</td>
+                    <td>{{ set_employee_records.address.address_line1 }}</td>
+                    <td>{{ set_employee_records.address.address_line2 }}</td>
+                    <td>{{ set_employee_records.address.postal_code }}</td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

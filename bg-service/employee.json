@@ -1,0 +1,112 @@
+{"data": [{
+  "id": 1,
+  "name": "Jhon",
+  "phone": "9999999999",
+  "address":
+  {
+    "city": "Pune",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 2,
+  "name": "Jacob",
+  "phone": "AZ99A99PQ9",
+  "address":
+  {
+    "city": "Pune",
+    "address_line1":"PQR road",
+    "address_line2":"ABC building",
+    "postal_code":"13455"
+  }
+}, {
+  "id": 3,
+  "name": "Ari",
+  "phone": "145458522",
+  "address":
+  {
+    "city": "Mumbai",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 4,
+  "name": "jhon",
+  "phone": "14545AA22",
+  "address":
+  {
+    "city": "Satara",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 5,
+  "name": "mathew",
+  "phone": "7412589630",
+  "address":
+  {
+    "city": "Borewali",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 6,
+  "name": "daniel",
+  "phone": "MY12589630",
+  "address":
+  {
+    "city": "pune",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 7,
+  "name": "samuel",
+  "phone": "MY125896T0",
+  "address":
+  {
+    "city": "pune",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 8,
+  "name": "shyam",
+  "phone": "147852369",
+  "address":
+  {
+    "city": "molun",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 9,
+  "name": "samphat",
+  "phone": "147852369",
+  "address":
+  {
+    "city": "hinjewadi",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}, {
+  "id": 10,
+  "name": "subash",
+  "phone": "147852369",
+  "address":
+  {
+    "city": "93214785",
+    "address_line1":"ABC road",
+    "address_line2":"XYZ building",
+    "postal_code":"12455"
+  }
+}]
+}
