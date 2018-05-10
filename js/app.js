@@ -29,3 +29,24 @@ app.filter('check_phone_number', function () {
 
 
 
+
+/*made custom filter for searching specific name*/
+app.filter('search_filter', function () {
+    return function (dataArray, search_key) {
+        if (angular.isUndefined(search_key)) { return dataArray; }
+
+        var tmp = [];
+        if (angular.isDefined(dataArray)) {
+            tmp = dataArray.filter(function (item) {
+                if ((item.name.toLowerCase()).startsWith((search_key.toLowerCase()))) {
+                    return item;
+                }
+
+                if ((item.address.city.toLowerCase()).startsWith((search_key.toLowerCase()))) {
+                    return item;
+                }
+            });
+        }
+        return tmp;
+    }
+});

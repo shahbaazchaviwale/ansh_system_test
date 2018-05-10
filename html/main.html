@@ -19,11 +19,11 @@
                     <th>address 1</th>
                     <th>address 2</th>
                     <th>Postal Code</th>
-
+                    
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="set_employee_records in get_employee_data ">
+                <tr ng-repeat="set_employee_records in get_employee_data | search_filter : search_employee">
                     <td>{{ set_employee_records.id }}</td>
                     <td>{{ set_employee_records.name | uppercase }}</td>
                     <td>{{ set_employee_records.phone| check_phone_number}}</td>
