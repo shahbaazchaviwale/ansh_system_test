@@ -9,7 +9,7 @@ app.controller('EmployeesEditController', ['$scope', 'commonService', '$location
         }
     });
     $scope.employee = rec[0];
-/*edit employee data*/
+    /*edit employee data*/
     $scope.editEmployee = function(){
         commonService.employeeRecords.filter(function(item,index){
             if(item.id == $scope.id){

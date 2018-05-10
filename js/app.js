@@ -17,7 +17,6 @@ app.config(function ($routeProvider) {
             controller: "EmployeesEditController"
         });
 });
-
 /*made common services*/
 app.factory("commonService", function ($http) {
     var obj = {};
@@ -45,7 +44,6 @@ app.filter('search_filter', function () {
                 if ((item.name.toLowerCase()).startsWith((search_key.toLowerCase()))) {
                     return item;
                 }
-
                 if ((item.address.city.toLowerCase()).startsWith((search_key.toLowerCase()))) {
                     return item;
                 }
